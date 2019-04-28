@@ -18,7 +18,7 @@ class ErrorCode
 
     const THIRD_ERROR = 300000;//调用第三方异常
 
-//    const PARAM_MISSING       = 10002;//缺少参数
+    const PARAM_MISSING       = 10002;//缺少参数
 //    const PARAM_WRONG         = 10003;//参数错误
 //    const UNKNOWN_ERROR       = 10004;//未知错误（异常）
 //    const PERMISSION_DENIED   = 10005;//无权访问
@@ -29,7 +29,7 @@ class ErrorCode
         self::SUCCESS             => '成功',
         self::FAIL                => '操作失败',
 
-//        self::PARAM_MISSING       => '缺少参数',
+        self::PARAM_MISSING       => '缺少参数',
 //        self::PARAM_WRONG         => '参数错误',
 //        self::UNKNOWN_ERROR       => '未知错误',
 //        self::PERMISSION_DENIED   => '无权访问',

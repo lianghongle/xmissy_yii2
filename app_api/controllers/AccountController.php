@@ -33,6 +33,10 @@ class AccountController extends BaseController
     {
         $phone = Yii::$app->request->get('phone', '');
 
+        if(empty($phone)){
+            throw new Exception("", ErrorCode::PARAM_MISSING);
+        }
+
         $phoneValidator = new PhoneValidator();
         if($phoneValidator->validate($phone)){
             throw new Exception("", ErrorCode::FAIL);
